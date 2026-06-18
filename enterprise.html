@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enterprise — Node Net Server (NNS)</title>
+<meta name="theme-color" content="#F0E6D2">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231B1B26'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23F2790F'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo" aria-label="Node Net Server home">
+      <span class="logo-mark"><span></span></span>
+      NNS
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="network.html">Network</a></li>
+      <li><a href="silicon.html">Silicon</a></li>
+      <li><a href="hosting.html">Hosting</a></li>
+      <li><a href="enterprise.html" class="active">Enterprise</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="contact.html" class="btn btn-primary">Request access</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ENTERPRISE -->
+  <section class="content-section" id="enterprise">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">For teams building on the grid</p>
+        <h2>Compute that's already standing where your users are.</h2>
+        <p class="lead">Train where you want. Infer where your users already are. Bypass the limitations of centralized cloud infrastructure with edge computing that feels completely native.</p>
+      </div>
+      <div class="ent-grid reveal">
+        <div class="ent-card glass-card">
+          <span class="mark"></span>
+          <h3>Edge inference</h3>
+          <p>Route inference requests to the Block Hub nearest your user instead of the nearest region. Most customers see latency drop to single-digit milliseconds.</p>
+        </div>
+        <div class="ent-card glass-card">
+          <span class="mark"></span>
+          <h3>Training overflow</h3>
+          <p>Burst long training runs across idle Home Node capacity overnight, at a fraction of reserved hyperscale pricing.</p>
+        </div>
+        <div class="ent-card glass-card">
+          <span class="mark"></span>
+          <h3>Sustainability reporting</h3>
+          <p>Every job ships with a heat-reuse and grid-mix report, broken down by Block Hub, for teams that need to show their work.</p>
+        </div>
+        <div class="ent-card glass-card">
+          <span class="mark"></span>
+          <h3>Dedicated carve-outs</h3>
+          <p>Reserve a fixed slice of a region's mesh for predictable, contractual capacity, without reserving an entire facility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="Node Net Server home">
+          <span class="logo-mark"><span></span></span>
+          NNS
+        </a>
+        <p>Node Net Server (NNS) is a distributed grid of home-based AI compute, built on our own Ember silicon.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Network</h5>
+        <ul>
+          <li><a href="network.html">How it works</a></li>
+          <li><a href="network.html#coverage">Coverage map</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Silicon</h5>
+        <ul>
+          <li><a href="silicon.html">Ember</a></li>
+          <li><a href="silicon.html#specs">Specifications</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get involved</h5>
+        <ul>
+          <li><a href="hosting.html">Host a Node</a></li>
+          <li><a href="enterprise.html">Enterprise</a></li>
+          <li><a href="contact.html">Partnerships</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Node Net Server, Inc.</span>
+      <span class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="main.js"></script>
+<script src="3d-network.js"></script>
+</body>
+</html>

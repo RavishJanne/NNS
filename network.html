@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Network — Node Net Server (NNS)</title>
+<meta name="theme-color" content="#F0E6D2">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231B1B26'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23F2790F'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo" aria-label="Node Net Server home">
+      <span class="logo-mark"><span></span></span>
+      NNS
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="network.html" class="active">Network</a></li>
+      <li><a href="silicon.html">Silicon</a></li>
+      <li><a href="hosting.html">Hosting</a></li>
+      <li><a href="enterprise.html">Enterprise</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="contact.html" class="btn btn-primary">Request access</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="page-header">
+    <div class="container">
+      <p class="eyebrow">Grid architecture</p>
+      <h1>Node. Net. Server.<br>The name is the architecture.</h1>
+      <p class="lead">Three tiers, one continuous home-to-home mesh — from a spare closet to the regional core.</p>
+    </div>
+  </div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="tiers reveal">
+        <div class="tier-card glass-card">
+          <span class="tier-label">TIER 01 — HOME NODE</span>
+          <h3>The home node</h3>
+          <p>A closet-sized enclosure installed in a spare room, garage, or utility space. Runs our Ember silicon, contributes idle compute to the grid, and routes its waste heat back into the house.</p>
+          <div class="spec-row">
+            <span class="spec-chip">1.2kW typical draw</span>
+            <span class="spec-chip">whisper-quiet</span>
+            <span class="spec-chip">heat-capture ready</span>
+          </div>
+        </div>
+        <div class="tier-card glass-card">
+          <span class="tier-label">TIER 02 — BLOCK HUB</span>
+          <h3>The block hub</h3>
+          <p>One hub per 40–120 homes. Aggregates traffic from nearby Home Nodes, caches hot model weights locally, and keeps the block running even if the backbone link drops.</p>
+          <div class="spec-row">
+            <span class="spec-chip">sub-2ms local hop</span>
+            <span class="spec-chip">on-device caching</span>
+            <span class="spec-chip">automatic failover</span>
+          </div>
+        </div>
+        <div class="tier-card glass-card">
+          <span class="tier-label">TIER 03 — GRID CORE</span>
+          <h3>The grid core</h3>
+          <p>The regional exchange that stitches Block Hubs into the full NNS Grid. Handles orchestration, customer-facing APIs, and the long-haul links between regions.</p>
+          <div class="spec-row">
+            <span class="spec-chip">multi-region routing</span>
+            <span class="spec-chip">enterprise API</span>
+            <span class="spec-chip">99.98%+ uptime</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="Node Net Server home">
+          <span class="logo-mark"><span></span></span>
+          NNS
+        </a>
+        <p>Node Net Server (NNS) is a distributed grid of home-based AI compute, built on our own Ember silicon.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Network</h5>
+        <ul>
+          <li><a href="network.html">How it works</a></li>
+          <li><a href="network.html#coverage">Coverage map</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Silicon</h5>
+        <ul>
+          <li><a href="silicon.html">Ember</a></li>
+          <li><a href="silicon.html#specs">Specifications</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get involved</h5>
+        <ul>
+          <li><a href="hosting.html">Host a Node</a></li>
+          <li><a href="enterprise.html">Enterprise</a></li>
+          <li><a href="contact.html">Partnerships</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Node Net Server, Inc.</span>
+      <span class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="main.js"></script>
+<script src="3d-network.js"></script>
+</body>
+</html>
